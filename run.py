@@ -78,6 +78,14 @@ def calculate_surplus_data(sales_row):
     print("Calculating surplus data...\n")
 
 
+def update_surplus_worksheet(data):
+    """
+    Update surplus worksheet with the data provided
+    """
+    print("Updating surplus worksheet...\n")
+
+
+
 
 def main():
     """
