@@ -118,7 +118,11 @@ def get_last_5_entries_sales():
 
     columns = []
     for ind in range(1,7):
-        print(ind)
+        column = sales.col_values(ind)
+        columns.append(column[-5:])
+    pprint(columns)
+
+    return columns
 
     
 def main():
@@ -134,4 +138,4 @@ def main():
 
 print("Welcome to Love Sandwiches Data Automation")
 #main()
-get_last_5_entries_sales()
+sales_columns = get_last_5_entries_sales()
