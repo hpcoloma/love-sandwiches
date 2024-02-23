@@ -97,6 +97,7 @@ def calculate_surplus_data(sales_row):
     print("Calculating surplus data...\n")
     stock = SHEET.worksheet("stock").get_all_values()
     stock_row = stock[-1]
+    #print(stock_row)
     
     
     surplus_data = []
@@ -113,8 +114,8 @@ def get_last_5_entries_sales():
     as a list of lists
     """
     sales = SHEET.worksheet("sales")
-    #column = sales.col_values(3)
-    #print(column)
+    row = sales.row_values(1)
+    print(row)
 
     columns = []
     for ind in range(1,7):
